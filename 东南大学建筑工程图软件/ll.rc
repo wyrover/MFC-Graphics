@@ -1,0 +1,328 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ll.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ll.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LL_DIALOG DIALOGEX 0, 0, 575, 426
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "图形"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_DRAW,"Static",SS_BLACKFRAME,7,7,561,412
+END
+
+IDD_SHOW_DIALOG DIALOG DISCARDABLE  0, 0, 300, 296
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "属性"
+FONT 10, "System"
+BEGIN
+    LISTBOX         IDC_LISTDEFAULT,8,27,36,142,LBS_NOINTEGRALHEIGHT | 
+                    WS_TABSTOP
+    PUSHBUTTON      "添加预设到末尾",IDC_ADDDEFAULT,11,198,62,11
+    PUSHBUTTON      "删除末尾",IDC_DELETE,77,205,53,11
+    LTEXT           "预设定",IDC_STATIC,13,16,35,10
+    LTEXT           "水平间距",IDC_STATIC,53,16,35,10
+    LISTBOX         IDC_LISTDESTX,51,27,36,169,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "垂直间距",IDC_STATIC,93,16,35,10
+    LISTBOX         IDC_LISTDESTY,94,27,36,169,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "指定：",IDC_STATIC,9,173,35,10
+    PUSHBUTTON      "添加指定到末尾",IDC_ADDSPEC,11,212,62,11
+    EDITTEXT        IDC_SPEC,9,184,35,12,ES_AUTOHSCROLL
+    CONTROL         "设置水平间距",IDC_SETX,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,8,227,61,11
+    CONTROL         "设置垂直间距",IDC_SETY,"Button",BS_AUTORADIOBUTTON,69,
+                    228,61,10
+    GROUPBOX        "轴线设置",IDC_STATIC,7,6,127,236
+    GROUPBOX        "元素",IDC_STATIC,136,218,157,24
+    CONTROL         "无",IDC_NONE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,137,
+                    230,21,9
+    CONTROL         "柱",IDC_PILLAR,"Button",BS_AUTORADIOBUTTON,159,230,21,9
+    CONTROL         "主梁",IDC_PRIMARYBEAM,"Button",BS_AUTORADIOBUTTON,180,
+                    230,28,9
+    CONTROL         "次梁",IDC_SECONDARYBEAM,"Button",BS_AUTORADIOBUTTON,208,
+                    230,28,9
+    CONTROL         "多边形区域",IDC_POLYZONE,"Button",BS_AUTORADIOBUTTON,
+                    238,230,52,9
+    GROUPBOX        "元素属性",IDC_STATIC,133,6,160,211
+    LTEXT           "元素列表",IDC_STATIC,136,17,35,10
+    LISTBOX         IDC_ELEMENTLIST,136,27,34,188,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_PROPERTYLIST,174,27,114,188,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "元素属性",IDC_STATIC,176,17,35,10
+    GROUPBOX        "图例",IDC_STATIC,7,242,286,47
+    LTEXT           "轴线",IDC_STATIC,9,256,22,8
+    LTEXT           "截面线",IDC_STATIC,102,256,27,8
+    LTEXT           "柱",IDC_STATIC,206,254,18,8
+    LTEXT           "主梁",IDC_STATIC,8,272,20,8
+    LTEXT           "次梁",IDC_STATIC,105,272,21,8
+    LTEXT           "区域",IDC_STATIC,204,273,17,8
+    CONTROL         "",IDC_ZHOUXIANFIG,"Static",SS_BLACKFRAME,31,250,64,17
+    CONTROL         "",IDC_ZHULIANGFIG,"Static",SS_BLACKFRAME,31,268,64,17
+    CONTROL         "",IDC_JIEMIANXIANFIG,"Static",SS_BLACKFRAME,131,250,64,
+                    17
+    CONTROL         "",IDC_CILIANGFIG,"Static",SS_BLACKFRAME,131,268,64,17
+    CONTROL         "",IDC_ZHUFIG,"Static",SS_BLACKFRAME,227,250,64,17
+    CONTROL         "",IDC_NEIBUQUYUFIG,"Static",SS_BLACKFRAME,227,268,64,17
+END
+
+IDD_LL_DIALOG_SECTION DIALOGEX 0, 0, 575, 426
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "图形"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_DRAW,"Static",SS_BLACKFRAME,7,7,561,412
+END
+
+IDD_SETSECTION DIALOG DISCARDABLE  0, 0, 296, 240
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "截面属性"
+FONT 10, "System"
+BEGIN
+    LTEXT           "指定竖向间距：",IDC_STATIC,12,76,63,9
+    LTEXT           "指定横向杆距：",IDC_STATIC,12,16,58,10
+    EDITTEXT        IDC_HORPOLEDIS,11,27,62,12,ES_AUTOHSCROLL
+    GROUPBOX        "元件设置",IDC_STATIC,7,6,140,179
+    GROUPBOX        "图例",IDC_STATIC,7,188,139,45
+    LTEXT           "杆",IDC_STATIC,14,202,16,8
+    LTEXT           "木方",IDC_STATIC,81,202,20,8
+    LTEXT           "板填充",IDC_STATIC,80,219,27,8
+    LTEXT           "剪刀撑",IDC_STATIC,13,218,27,8
+    CONTROL         "",IDC_POLEFIG,"Static",SS_BLACKFRAME,40,196,34,17
+    CONTROL         "",IDC_BRIDGEFIG,"Static",SS_BLACKFRAME,40,215,34,17
+    CONTROL         "",IDC_FLITCHFIG,"Static",SS_BLACKFRAME,110,196,32,17
+    CONTROL         "",IDC_BOARDFILLFIG,"Static",SS_BLACKFRAME,110,215,32,17
+    EDITTEXT        IDC_HEIPOLEDIS,11,87,63,12,ES_AUTOHSCROLL
+    LTEXT           "梁截面参数",IDC_STATIC,150,17,41,8
+    CONTROL         "List1",IDC_BEAMPARAMS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,150,27,139,78
+    LTEXT           "板截面参数",IDC_STATIC,150,129,41,8
+    CONTROL         "List1",IDC_BOARDPARAMS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,150,139,139,78
+    PUSHBUTTON      "添加梁参数",IDC_ADDBEAMPARAM,196,108,45,14
+    PUSHBUTTON      "添加板参数",IDC_ADDBOARDPARAM,194,218,45,14
+    LTEXT           "指定纵向杆距：",IDC_STATIC,12,45,58,10
+    EDITTEXT        IDC_VERPOLEDIS,11,56,62,12,ES_AUTOHSCROLL
+    GROUPBOX        "参数设置",IDC_STATIC,148,7,141,226
+    PUSHBUTTON      "应用",IDC_APPLYCHANGE,22,170,45,11
+    PUSHBUTTON      "去除剪刀撑",IDC_REMOVECLIP,88,170,45,11
+END
+
+IDD_INPUT DIALOG DISCARDABLE  0, 0, 196, 76
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,54,55,29,14
+    PUSHBUTTON      "取消",IDCANCEL,112,55,30,14
+    LTEXT           "参数1",IDC_PARAM1,9,9,49,8
+    EDITTEXT        IDC_PAR1,74,7,115,14,ES_AUTOHSCROLL
+    LTEXT           "参数2",IDC_PARAM2,9,24,49,8
+    EDITTEXT        IDC_PAR2,74,22,116,14,ES_AUTOHSCROLL
+    LTEXT           "参数3",IDC_PARAM3,8,41,50,8
+    EDITTEXT        IDC_PAR3,74,39,115,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO,74,23,115,46,CBS_DROPDOWN | NOT WS_VISIBLE | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ll Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ll\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ll.EXE\0"
+            VALUE "ProductName", "ll 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_LL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 568
+        VERTGUIDE, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 419
+        HORZGUIDE, 196
+    END
+
+    IDD_SHOW_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 289
+    END
+
+    IDD_LL_DIALOG_SECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 568
+        VERTGUIDE, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 419
+        HORZGUIDE, 196
+    END
+
+    IDD_SETSECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+
+    IDD_INPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ll.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,22 @@
+# Microsoft Developer Studio Generated Dependency File, included by DesignDlg.mak
+
+.\DesignDlg.cpp : \
+	".\DesignDlg.h"\
+	".\DesignDlgDlg.h"\
+	".\StdAfx.h"\
+	
+
+.\DesignDlg.rc : \
+	".\res\DesignDlg.ico"\
+	".\res\DesignDlg.rc2"\
+	
+
+.\DesignDlgDlg.cpp : \
+	".\DesignDlg.h"\
+	".\DesignDlgDlg.h"\
+	".\StdAfx.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
